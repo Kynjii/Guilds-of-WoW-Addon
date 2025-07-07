@@ -1,0 +1,2 @@
+--  handles syncing of latest wishlist data with other addon members
+-- utilizes the GoWComm code or the built in functions from RCLootCouncil
