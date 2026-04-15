@@ -22,13 +22,14 @@ GOW.defaults = {
 		showLootAlerts = true,
 		showRCLCWishlist = true,
 		rclcDisplayMode = "percent",
-		lootHistory = {},
-		allLootHistory = {},
 		wishlistInfoFramePos = nil,
 		wishlistBrowserFramePos = nil,
 		wishlistCompactMode = false,
 		guildRosterFilter = "all",
-	}
+	},
+	global = {
+		lootHistory = {},
+	},
 }
 
 local ns = select(2, ...);
@@ -465,6 +466,10 @@ f:SetScript("OnEvent", function(self, event, arg1, arg2)
 
 		if GOW.Wishlists then
 			GOW.Wishlists:Initialize();
+		end
+
+		if GOW.LootHistory then
+			GOW.LootHistory:Init();
 		end
 	elseif event == "GUILD_ROSTER_UPDATE" then
 		Core:SetRosterInfo();
