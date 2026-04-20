@@ -27,7 +27,7 @@ GOW.defaults = {
 		wishlistCompactMode = false,
 		gainDisplayMode = "percent",
 		guildRosterFilter = "all",
-	},
+	}
 }
 
 local ns = select(2, ...);
