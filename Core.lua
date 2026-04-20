@@ -28,9 +28,6 @@ GOW.defaults = {
 		gainDisplayMode = "percent",
 		guildRosterFilter = "all",
 	},
-	global = {
-		lootHistory = {},
-	},
 }
 
 local ns = select(2, ...);
